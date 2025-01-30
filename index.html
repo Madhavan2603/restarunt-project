@@ -1,0 +1,731 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        /* Navbar Link Hover Effect */
+        .navbar-nav .nav-link {
+            transition: color 0.3s ease-in-out;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #f8d210 !important;
+        }
+
+        /* Search Box Styling */
+        .search-input {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .search-input input {
+            border: 1px solid #fff;
+            padding: 5px 10px;
+            border-radius: 20px;
+            outline: none;
+            background: transparent;
+            color: #fff;
+        }
+        .search-input button {
+            border: none;
+            background-color: #f8d210;
+            color: #000;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .search-input input::placeholder {
+            color: #ddd;
+        }
+
+        /* Hero Section Styling */
+        #home {
+            background: url('./Images/hero3.jpg') center/cover no-repeat;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+        #home::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        .hero-content h1 {
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .hero-content .btn-primary {
+            background: #f8d210;
+            border: none;
+            font-weight: bold;
+            padding: 12px 20px;
+            border-radius: 30px;
+        }
+        .hero-content .btn-primary:hover {
+            background: #f39c12;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+    <div class="container-fluid">
+        <a class="navbar-brand fw-bold display-3 mt-2 text-warning" href="#" >Orange-Restaurant</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="file:///C:/Users/madha/Desktop/project/jab23-fsd07-wd-iproject-restaurant-ws-main/index.html#menu" target="_blank">Menu</a></li>
+                <li class="nav-item"><a class="nav-link" href="#chefs">Chefs</a></li>
+                <li class="nav-item"><a class="nav-link" href="#reservation" target="_blank">Reservation</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Review">Customer Review</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="#admin">Admin</a></li>
+            </ul>
+        </div>
+        <!-- Search Bar -->
+        <div class="search-input">
+            <input type="search" placeholder="Search...">
+            <button>Search</button>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home">
+    <div class="hero-content">
+        <h1 class="display-4">Welcome to Our Restaurant</h1>
+        <p class="lead">Delicious food, cozy atmosphere, and top-class service.</p>
+        <a href="#menu" class="btn btn-primary mt-3">Explore Our Menu</a>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+  
+
+  <!-- Menu Section -->
+  <section class="menu " id="menu">
+    <div class="container text-center">
+      <h1 class="m-5"><u>Our <span class="menu_text">Menu</span></u></h1>
+      <div class="row row-cols-1 row-cols-md-4 g-4 ">
+        <div>
+          <div class="col">
+            <div class="card h-100 shadow-lg">
+              <div class="menu_img overflow-hidden pt-1">
+                <a href="https://youtu.be/H3R1y1ADCZw"><img src="../burg.jpg" class="card-img-top" alt="..."></a>
+              </div>
+              <div class="card-body">
+                <h2 class="card-title">Buger</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, illo?F</p>
+                <h5><b>$20.00</b></h5>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <br><br>
+                <button class="menu_btn"><a href="#">Order Now</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="col">
+            <div class="card h-100 shadow-lg">
+              <div class="menu_img overflow-hidden pt-1">
+                <a href="https://www.youtube.com/watch?v=HW2SoMJToIo&pp=ugMICgJhchABGAE%3D"><img src="../pasta.jpg"
+                    class="card-img-top " alt="..."></a>
+              </div>
+              <div class="card-body">
+                <h2 class="card-title">pasta</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, illo?F</p>
+                <h5><b>$20.00</b></h5>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <br><br>
+                <button class="menu_btn"><a href="#">Order Now</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="col">
+            <div class="card h-100 shadow-lg">
+              <div class="menu_img overflow-hidden pt-1">
+                <a href="https://www.youtube.com/watch?v=nOg-UCvoNMo&pp=ugMICgJhchABGAE%3D"><img
+                    src="../lasag.jpg" class="card-img-top" alt="..."></a>
+              </div>
+              <div class="card-body">
+                <h2 class="card-title">lasagna</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, illo?F</p>
+                <h5><b>$20.00</b></h5>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <br><br>
+                <button class="menu_btn"><a href="#">Order Now</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="col">
+            <div class="card h-100 shadow-lg">
+              <div class="menu_img overflow-hidden pt-1">
+                <a href="https://www.youtube.com/watch?v=Yb1tfUxTxIA"><img src="../drink.jpg"
+                    class="card-img-top" alt="..."></a>
+              </div>
+              <div class="card-body">
+                <h2 class="card-title">Drink</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, illo?F</p>
+                <h5><b>$20.00</b></h5>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <br><br>
+                <button class="menu_btn"><a href="#">Order Now</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="col">
+            <div class="card h-100 shadow-lg">
+              <div class="menu_img overflow-hidden pt-1">
+                <a href="https://www.youtube.com/watch?v=4GzxPw6-rLM"><img src="../pizza.jpg" class="card-img-top"
+                    alt="..."></a>
+              </div>
+              <div class="card-body">
+                <h2 class="card-title">pizza</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, illo?F</p>
+                <h5><b>$20.00</b></h5>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <br><br>
+                <button class="menu_btn"><a href="#">Order Now</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="col">
+            <div class="card h-100 shadow-lg">
+              <div class="menu_img overflow-hidden pt-1">
+                <a href="https://www.youtube.com/watch?v=g4TY8Cw5UJ4"><img src="../hotd.jpg" class="card-img-top"
+                  height="180px"
+                    alt="..."></a>
+              </div>
+              <div class="card-body">
+                <h2 class="card-title">Hot Dog</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, illo?F</p>
+                <h5><b>$20.00</b></h5>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <br><br>
+                <button class="menu_btn"><a href="#">Order Now</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="col">
+            <div class="card h-100 shadow-lg">
+              <div class="menu_img overflow-hidden pt-1">
+                <a href="https://www.youtube.com/watch?v=dNqC-9g9vtw"><img src="../drink.jpg" class="card-img-top"
+                  height="180px"
+                    alt="..."></a>
+              </div>
+              <div class="card-body">
+                <h2 class="card-title">Juices</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, illo?F</p>
+                <h5><b>$20.00</b></h5>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <br><br>
+                <button class="menu_btn"><a href="#">Order Now</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="col">
+            <div class="card h-100 shadow-lg">
+              <div class="menu_img overflow-hidden pt-1">
+                <a href="https://www.youtube.com/watch?v=OQGAMDVF51Y"><img src="../images/salad.jpg" class="card-img-top"
+                  height="180px"
+                    alt="..."></a>
+              </div>
+              <div class="card-body">
+                <h2 class="card-title">Salads</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, illo?F</p>
+                <h5><b>$20.00</b></h5>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <br><br>
+                <button class="menu_btn"><a href="#">Order Now</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="col">
+            <div class="card h-100 shadow-lg">
+              <div class="menu_img overflow-hidden pt-1">
+                <a href="https://www.youtube.com/watch?v=igzAhozJqv0"><img src="../images/choco.jpg"
+                    class="card-img-top" alt="..."></a>
+              </div>
+              <div class="card-body">
+                <h2 class="card-title">Chocolate</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, illo?F</p>
+                <h5><b>$20.00</b></h5>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <br><br>
+                <button class="menu_btn"><a href="#">Order Now</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="col">
+            <div class="card h-100 shadow-lg">
+              <div class="menu_img overflow-hidden pt-1">
+                <a href="https://www.youtube.com/watch?v=NdhC_Dai64g"><img src="../images/ice.jpg"
+                    class="card-img-top" height="180px" alt="..."></a>
+              </div>
+              <div class="card-body">
+                <h2 class="card-title">Ice Cream</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, illo?F</p>
+                <h5><b>$20.00</b></h5>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <br><br>
+                <button class="menu_btn"><a href="#">Order Now</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="col">
+            <div class="card h-100 shadow-lg">
+              <div class="menu_img overflow-hidden pt-1">
+                <a href="https://www.youtube.com/watch?v=GVme_4o-ZCk"><img src="../images/lasag.jpg" class="card-img-top" height="180px"
+                    alt="..."></a>
+              </div>
+              <div class="card-body">
+                <h2 class="card-title">lasagna</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, illo?F</p>
+                <h5><b>$20.00</b></h5>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <br><br>
+                <button class="menu_btn"><a href="#">Order Now</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="col">
+            <div class="card h-100 shadow-lg">
+              <div class="menu_img overflow-hidden pt-1">
+                <a href="https://www.youtube.com/watch?v=f4kDir-5NYw"><img src="../images/sand.jpg" class="card-img-top"
+                    alt="..."></a>
+              </div>
+              <div class="card-body">
+                <h2 class="card-title">Sandwich</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, illo?F</p>
+                <h5><b>$20.00</b></h5>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <br><br>
+                <button class="menu_btn"><a href="#">Order Now</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chefs Section -->
+  <section id="chefs" class="py-5 m-5">
+    <div class="container">
+      <h2 class="text-center mb-4"><u>Our Chefs</u></h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="../chef1.jpg" class="card-img-top"  alt="Chef 1">
+            <div class="card-body text-center">
+              <h5 class="card-title">Chef 1</h5>
+              <p class="card-text">Specialist in Italian Cuisine.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="../chef2.jpg" class="card-img-top" height="620px" alt="Chef 2">
+            <div class="card-body text-center">
+              <h5 class="card-title">Chef 2</h5>
+              <p class="card-text">Master of French Pastries.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="../images/chef3.jpg" class="card-img-top"  alt="Chef 3">
+            <div class="card-body text-center">
+              <h5 class="card-title">Chef 3</h5>
+              <p class="card-text">Expert in Grilled Dishes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reservation py-5 mt-5" id="reservation">
+    <div class="container">
+        <h1 class="text-center mb-4 m-5"><u>Reservation <span class="reservation_text">Form</span></u></h1>
+        <div class="row align-items-center">
+            
+            <!-- Image Section -->
+            <div class="col-lg-6 text-center mb-4 mb-lg-0">
+                <img src="../reser.jpg" class="img-fluid rounded w-75">
+            </div>
+            
+            <!-- Reservation Form -->
+            <div class="col-lg-6">
+                <form>
+                    <div class="row">
+                        
+                        <!-- Left Column -->
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" placeholder="Your Email">
+                        </div>
+                        
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Date</label>
+                            <input type="date" class="form-control">
+                        </div>
+                        
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Time</label>
+                            <select class="form-select">
+                                <option selected>Choose your time</option>
+                                <option value="1">5 PM</option>
+                                <option value="2">6 PM</option>
+                                <option value="3">7 PM</option>
+                                <option value="4">8 PM</option>
+                                <option value="5">9 PM</option>
+                                <option value="6">10 PM</option>
+                            </select>
+                        </div>
+                        
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Number of Individuals</label>
+                            <input type="number" class="form-control" placeholder="Number">
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="col-12 text-center">
+                            <button class="btn btn-warning px-4 py-2 fw-bold">Reserve Now</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+ 
+  <section class="review py-5 mt-5" id="review">
+    <div class="container">
+      <h1 class="m-5"><u>Customer <span class="review_text">Review</span></u></h1>
+      <div class="row row-cols-1 row-cols-md-4 g-4 text-center review_box">
+        <div class="col">
+          <div class="card p-3 shadow-lg">
+            <div class="review_img">
+              <img src="../man.jog.jpeg"height="266px" class="rounded-circle w-75" alt="...">
+            </div>
+            <div class="card-body">
+              <h2 class="name" style="transition: 0.3s;">John Deo</h2>
+              <div class="review_icon">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <div class="review_social">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+              <br><br>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus alias laudantium eum cumque eius
+                perspiciatis? Modi nihil excepturi facilis rem repellendus doloremque, debitis quis incidunt impedit
+                sit,
+                sapiente in architecto nobis consequuntur voluptatum, quasi reiciendis ea maxime accusantium ut
+                doloribus
+                earum asperiores ab nesciunt? Velit quibusdam beatae similique asperiores cupiditate?</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card p-3 shadow-lg">
+            <div class="review_img">
+              <img src="../wom.jpg"height="266px" class="rounded-circle w-75" alt="...">
+            </div>
+            <div class="card-body">
+              <h2 class="name" style="transition: 0.3s;">John Deo</h2>
+              <div class="review_icon">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <div class="review_social">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+              <br><br>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus alias laudantium eum cumque eius
+                perspiciatis? Modi nihil excepturi facilis rem repellendus doloremque, debitis quis incidunt impedit
+                sit,
+                sapiente in architecto nobis consequuntur voluptatum, quasi reiciendis ea maxime accusantium ut
+                doloribus
+                earum asperiores ab nesciunt? Velit quibusdam beatae similique asperiores cupiditate?</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card p-3 shadow-lg">
+            <div class="review_img">
+              <img src="../wome.jpg"height="266px" class="rounded-circle w-75" alt="...">
+            </div>
+            <div class="card-body">
+              <h2 class="name" style="transition: 0.3s;">John Deo</h2>
+              <div class="review_icon">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <div class="review_social">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+              <br><br>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus alias laudantium eum cumque eius
+                perspiciatis? Modi nihil excepturi facilis rem repellendus doloremque, debitis quis incidunt impedit
+                sit,
+                sapiente in architecto nobis consequuntur voluptatum, quasi reiciendis ea maxime accusantium ut
+                doloribus
+                earum asperiores ab nesciunt? Velit quibusdam beatae similique asperiores cupiditate?</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card p-3 shadow-lg">
+            <div class="review_img">
+              <img src="../pic.jpg"height="266px" class="rounded-circle w-75" alt="...">
+            </div>
+            <div class="card-body">
+              <h2 class="name" style="transition: 0.3s;">John Deo</h2>
+              <div class="review_icon">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <div class="review_social">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+              <br><br>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus alias laudantium eum cumque eius
+                perspiciatis? Modi nihil excepturi facilis rem repellendus doloremque, debitis quis incidunt impedit
+                sit,
+                sapiente in architecto nobis consequuntur voluptatum, quasi reiciendis ea maxime accusantium ut
+                doloribus
+                earum asperiores ab nesciunt? Velit quibusdam beatae similique asperiores cupiditate?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+  </section>
+  
+
+  <!-- Contact Section -->
+  <section id="contact py-5 mt-5" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4"><u>Contact Us</u></h2>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Your Name">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Your Email">
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Admin Form -->
+  <section id="admin" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4"><u>Admin Panel</u></h2>
+      <form>
+        <div class="mb-3">
+          <label for="itemName" class="form-label">Item Name</label>
+          <input type="text" class="form-control" id="itemName" placeholder="Item Name">
+        </div>
+        <div class="mb-3">
+          <label for="itemPrice" class="form-label">Price</label>
+          <input type="number" class="form-control" id="itemPrice" placeholder="Item Price">
+        </div>
+        <div class="mb-3">
+          <label for="itemImage" class="form-label">Image</label>
+          <input type="file" class="form-control" id="itemImage">
+        </div>
+        <button type="submit" class="btn btn-success">Add Item</button>
+      </form>
+    </div>
+  </section>
+  
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light pt-5 pb-4">
+    <div class="container text-center text-md-start">
+        <div class="row">
+            <!-- About Us -->
+            <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-4">
+                <h5 class="text-uppercase fw-bold">About Us</h5>
+                <hr class="mb-4">
+                <p>
+                    Welcome to our restaurant! We serve delicious, high-quality meals made with fresh ingredients.
+                    Experience the best dining atmosphere with us.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-4">
+                <h5 class="text-uppercase fw-bold">Quick Links</h5>
+                <hr class="mb-4">
+                <ul class="list-unstyled">
+                    <li><a href="#home" class="text-light text-decoration-none">Home</a></li>
+                    <li><a href="#menu" class="text-light text-decoration-none">Menu</a></li>
+                    <li><a href="#reservation" class="text-light text-decoration-none">Reservation</a></li>
+                    <li><a href="#contact" class="text-light text-decoration-none">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-4">
+                <h5 class="text-uppercase fw-bold">Contact Us</h5>
+                <hr class="mb-4">
+                <p><i class="fas fa-map-marker-alt me-2"></i> 123 Main Street, City, Country</p>
+                <p><i class="fas fa-phone me-2"></i> +91 98765 43210</p>
+                <p><i class="fas fa-envelope me-2"></i> info@Orangerestaurant.com</p>
+                <!-- Social Media Icons -->
+                <div>
+                    <a href="#" class="text-light me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="#" class="text-light me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="#" class="text-light me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright Section -->
+        <div class="text-center pt-3">
+            <p class="mb-0">&copy; 2025 Restaurant. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
